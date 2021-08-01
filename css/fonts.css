@@ -1,4 +1,3 @@
-/* Header menu */
 @font-face {
     font-family: 'Concert One';
     src: url('../fonts/ConcertOne/ConcertOne-Regular.eot');
@@ -10,11 +9,6 @@
     font-style: normal;
     font-display: swap;
 }
-
-
-
-
-/* Section 1 Hello */
 @font-face {
     font-family: 'Dancing Script';
     src: url('../fonts/DancingScript/DancingScript-Regular.eot');
@@ -26,8 +20,6 @@
     font-style: normal;
     font-display: swap;
 }
-
-
 @font-face {
     font-family: 'Orbitron';
     src: url('../fonts/Orbitron/Orbitron-Regular.eot');
@@ -39,9 +31,6 @@
     font-style: normal;
     font-display: swap;
 }
-
-
-
 @font-face {
     font-family: 'Delius Unicase';
     src: url('../fonts/DeliusUnicase/DeliusUnicase-Bold.eot');
@@ -53,9 +42,6 @@
     font-style: normal;
     font-display: swap;
 }
-
-
-
 @font-face {
     font-family: 'Slackey';
     src: url('../fonts/Slackey/Slackey-Regular.eot');
@@ -67,8 +53,6 @@
     font-style: normal;
     font-display: swap;
 }
-
-
 @font-face {
     font-family: 'Atomic Age';
     src: url('../fonts/AtomicAge/AtomicAge-Regular.eot');
@@ -80,8 +64,6 @@
     font-style: normal;
     font-display: swap;
 }
-
-
 @font-face {
     font-family: 'Kavoon';
     src: url('../fonts/Kavoon/Kavoon-Regular.eot');
@@ -93,8 +75,6 @@
     font-style: normal;
     font-display: swap;
 }
-
-
 @font-face {
     font-family: 'Diplomata';
     src: url('../fonts/Diplomata/Diplomata-Regular.eot');
