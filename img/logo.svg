@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="217" height="40" viewBox="0 0 217 40">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        font-size: 50px;
+      }
+
+      .cls-1 {
+        fill: #fff;
+        font-family: Bungee;
+      }
+
+      .cls-2 {
+        fill: #ff0f03;
+      }
+
+      .cls-3 {
+        fill: #eb1c24;
+        font-family: "Alfa Slab One";
+      }
+    </style>
+  </defs>
+  <text id="SaNY" class="cls-1" x="52" y="38">SaN<tspan class="cls-2">Y</tspan></text>
+  <text id="x" class="cls-3" transform="translate(0.512 39.107) scale(1.394)">x</text>
+</svg>

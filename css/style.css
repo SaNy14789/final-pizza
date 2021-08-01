@@ -1,0 +1,1249 @@
+/* Base Class */
+body{
+    overflow-x: hidden;
+}
+.bg{
+    background-image: url(../img/bg\ sec.webp);
+    color: white;
+}
+
+/* Start Header */
+.section-1{
+    background-image: url(../img/section\ 1.webp);
+    width: 100%;
+    background-size: cover;
+    height: 750px;
+    background-position: center;
+    position: relative;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.wrapper .logo{
+    width: 150px;
+}
+.wrapper .logo img{
+    width: 100%;
+}
+header{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 500ms;
+    z-index: 999;
+}
+.nav{
+    display: flex;
+}
+.nav a{
+    margin-left: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Concert One';
+    text-transform: capitalize;
+    font-weight: 999;
+    color: #eee;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    padding: 10px 1px;
+    transition: 500ms;
+    
+}
+a.active{
+    color: #fac564;
+    border-color: #fac564;
+}
+nav a:hover{
+    border-color: #fac564;
+}
+.bgc{
+    background: black;
+    padding: 10px;
+}
+
+.bgc .logo{
+    font-size: 30px;
+    color: #000;
+}
+
+.bgc nav a{
+    width: 50px;
+    color: white;
+    margin-right: 15px;
+}
+.bgc nav a.active{
+    color: #fac564;
+}
+.burger-icon {
+    display: none;
+}
+
+.login{
+    background: red;
+    font-family: 'Concert One';
+    padding: 10px;
+    transition: 500ms;
+}
+.login i{
+    color: white;
+    font-size: 20px;
+    vertical-align: top;
+    cursor: pointer;
+}
+.login a{
+    color: white;
+    font-weight: 999;
+}
+.login:hover{
+    background: grey;
+}
+/* End Header */
+
+
+/* Start Section Welcome*/
+#Welcome{
+    position: absolute;
+    top: 230px;
+    left:30%;
+}
+
+.welcome{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.welcome h3{
+    font-size: 50px;
+    font-family: 'Dancing Script';
+    text-transform: uppercase;
+    font-weight: 999;
+    color: #fac564;
+    margin-bottom: 20px;
+}
+.welcome h2{
+    max-width: 600px;
+    width: 100%;
+    font-size: 40px;
+    font-family: 'Orbitron';
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.welcome p{
+    max-width: 500px;
+    width: 100%;
+    font-family: 'Concert One';
+    font-size: 18px;
+    line-height: 1.3;
+    font-family: 300;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.welcome .but .order{
+    padding: 15px;
+    background: #fac564;
+    border:  1px solid #fac564;
+    font-family: 'Concert One';
+    color: black;
+    margin-right: 10px;
+    transition: all 0.5s linear 0.4s;
+}
+.welcome .but .view{
+    padding: 15px;
+    border:  1px solid white;
+    font-family: 'Concert One';
+    color: white;
+    margin-right: 10px;
+    transition: all 0.5s linear 0.4s;
+}
+.welcome .but .order:hover{
+    background: none;
+    color: white;
+    border: 1px solid #fac564;
+    
+}
+.welcome .but .view:hover{
+    background: #fac564;
+    color: black;
+    border: 1px solid #fac564;
+}
+
+/* End Section Welcome*/
+
+
+
+
+/* Start Section 2 Info */
+.info{
+    width: 100%;
+    display: flex;
+}
+
+.info .left{
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: black;
+    color: white;
+    padding: 20px 10px 10px 50px ;
+}
+.info .left .tel{
+    display: flex;
+}
+
+
+.info .left .tel .text{
+    display: flex;
+    flex-direction: column;
+}
+
+.info .left .tel i{
+    color: #fac564;
+    margin-right: 20px;
+    font-size: 16px;
+}
+.info .left .tel .text h2{
+    font-size: 16px;
+    font-family: 'Delius Unicase';
+    line-height: 1.4;
+    margin-bottom: 18px;
+}
+
+.info .left .tel .text h3{
+    font-size: 16px;
+    font-family: 'Delius Unicase';
+    line-height: 1.4;
+    margin-bottom: 20px;
+    color: grey;
+}
+
+.info .right{
+    width: 35%;
+    background: #fac564;
+    padding: 40px;
+    color: white;
+    font-size: 25px;
+}
+
+.info .right i{
+    margin-left: 30px;
+}
+
+.info .right i:hover{
+    color: black;
+    cursor: pointer;
+}
+/* End Section 2 Info */
+
+
+
+/* Start Section 3 Restorant Info */
+
+.rest-info{
+    display: flex;
+}
+.rest-info .bg{
+    background-image: url(../img/section\ 3.webp);
+    background-size: cover;
+    width: 50%;
+    height: 400px;
+}
+.rest-info .text {
+    width: 50%;
+    height: 400px;
+    padding: 100px;
+    font-family: 'Delius Unicase';
+}
+.rest-info .text i{
+    font-size: 30px;
+    font-weight: 400px;
+    color: #fac564;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.rest-info .text span::before{
+    content: 'welcome to';
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+.rest-info .text span::after{
+    content: 'a restaurant';
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+.rest-info .text p{
+    max-width: 565px;
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.8;
+    color: grey;
+    font-family: 'Concert One';
+}
+/* End Section 3 Restorant Info */
+
+
+
+/* Start Section 4 Services */
+.services{
+    background-image: url(../img/section\ 4.webp);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.services h2{
+    font-size: 30px;
+    font-family: 'Delius Unicase';
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.services p{
+    max-width: 635px;
+    width: 100%;
+    font-size: 15px;
+    font-family: 'Concert One';
+    text-align: center;
+    color: #5c3d03;
+    margin-bottom: 50px;
+    line-height: 1.8;
+}
+
+.services .flex{
+    display: flex;
+}
+
+.services .flex .box{
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .flex .box .icon{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #bf7e06;
+    font-size: 60px;
+    color: #5c3d03;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: all 0.3s linear 0.4s;
+}
+.services .flex .box .icon:hover{
+    background: #bf7e06;
+    color: white;
+}
+.services .flex .box h3{
+    font-size: 18px;
+    font-family: 'Delius Unicase';
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 20px;    
+}
+.services .flex .box p{
+    max-width: 350px;
+    font-family: 'Concert One';
+    width: 100%;
+    color: #5c3d03;
+}
+/* End Section 4 Services */
+
+
+
+/* Start Section 5 Meals */
+
+.meals{
+    width: 100%;
+    color: white;
+}
+.meals h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Concert One';
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.meals .conteiner{
+    display: flex;
+    flex-wrap: wrap;
+}
+.meals .conteiner .item{
+    width: 33.3%;
+    
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.meals .conteiner .item .img{
+    width: 50%;
+}
+.meals .conteiner .item .img img{
+    width: 100%;
+    height: 240px;
+}
+
+
+.meals .conteiner .item .delat{
+    width: 50%;
+    padding: 30px;
+}
+.meals .conteiner .item .delat h3{
+    font-size: 20px;
+    font-family: 'Delius Unicase';
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.meals .conteiner .item .delat p{
+    max-width: 189px;
+    width: 100%;
+    line-height: 1.4;
+    font-family: 'Atomic Age';
+}
+.meals .conteiner .item .delat .price{
+    margin-top: 20px;
+}
+
+.meals .conteiner .item .delat .price span{
+    color: #bf7e06;
+    font-family: 'Concert One';
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.meals .conteiner .item .delat .price a{
+    color: rgba(255,255,255,.8);
+    border: 1px solid white;
+    font-family: 'Concert One';
+    padding: 10px;
+    text-transform: uppercase;
+
+}
+.meals .conteiner .item .delat .price a:hover{
+    background: #fac564;
+    color: black;
+    border: 1px solid #bf7e06;
+}
+/* End Section 5 Meals */
+
+
+
+/* Start Section 6 menu pricing */
+
+.menu-pricing{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.menu-pricing  .texts{
+    margin-bottom: 50px;
+    text-align: center;
+
+}
+.menu-pricing .texts h3{
+    font-size: 30px;
+    font-family: 'Concert One';
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.menu-pricing .texts p{
+    max-width: 635px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Delius Unicase';
+    color: grey;
+    line-height: 1.5;
+}
+
+.menu-pricing  .texts .box-box {
+    max-width: 635px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.menu-pricing  .texts .box-box .b1{
+    width: 6px;
+    height: 6px;
+    background: #fac564;
+    margin-right: 10px;
+    transform: rotate(140deg);
+
+}
+.menu-pricing  .texts .box-box .b2{
+    width: 10px;
+    height: 10px;
+    background: #fac564;
+    margin-right: 10px;
+    transform: rotate(140deg);
+}
+
+.menu-pricing  .texts .box-box .b3{
+    width: 6px;
+    height: 6px;
+    background: #fac564;
+    transform: rotate(140deg);
+}
+
+.menu-pricing  .texts .box-box::before{
+    content: '';
+    width: 40px;
+    height: 2px;
+    background: #fac564;
+    margin-right: 10px;
+}
+.menu-pricing  .texts .box-box::after{
+    content: '';
+    width: 40px;
+    height: 2px;
+    background: #fac564;
+    margin-left: 10px;
+}
+
+
+.menu-pricing .flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-pricing .flex .box{
+    max-width: 570px;
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+}
+
+.menu-pricing .flex .box .img{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+.menu-pricing .flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.menu-pricing .flex .box .img{
+    width: 60px;
+    height: 60px;
+}
+
+
+.menu-pricing .flex .box .img img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.menu-pricing .flex .box .text .tit-price{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-pricing .flex .box .text h2{
+    color: #bfbfbf;
+    font-family: 'Delius Unicase';
+    padding-right: 20px;
+}
+.menu-pricing .flex .box .text .tit-price .price{
+    color: #fac564;
+    font-family: 'Concert One';
+}
+
+.menu-pricing .flex .box .text p{
+    font-size: 15px;
+    font-family: 'Concert One';
+    color: grey;
+    margin-top: 20px;
+}
+/* End Section 6 menu pricing */
+
+
+/* Start Section 7 photo-delat */
+
+
+.container {
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+}
+
+.slide {
+    height: 400px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    color: #fff;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 500ms ease-in-out;
+}
+.slide h3 {
+    position: absolute;
+    font-size: 24px;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+.slide.active {
+    flex: 10;
+}
+
+.slide.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+.photo .flex{
+    background-image: url(../img/section\ 7.webp);
+    width: 100%;
+    
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.photo .flex .box{
+    max-width: 240px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo .flex .box .icon{
+    width: 100px;
+    height: 100px;
+    color: #fac564;
+    border: 1px solid #fac564;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    transition: all 0.3s linear 0.4s;
+}
+.photo .flex .box .icon:hover{
+    background: #bf7e06;
+    color: white;
+    border: 1px solid #bf7e06;
+}
+
+.photo .flex .box .title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.photo .flex .box h3{
+    
+    font-size: 30px;
+    font-family: 'Kavoon';
+    font-weight: 400px;
+    color: #fac564;
+    margin-bottom: 20px;
+}
+.photo .flex .box span{
+    
+    font-size: 14px;
+    font-weight: 900;
+    color: #bfbfbf;
+    margin-bottom: 50px;
+}
+
+/* stiki */
+.slider {
+    width: 50%;
+    margin: 100px auto;
+}
+.slick-slide {
+    margin: 0px 20px;
+}
+.slick-slide img {
+    width: 100%;
+}
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+}
+.slick-active {
+    opacity: .3;
+}
+.slick-current {
+    opacity: 1;
+}
+.slick-dots li button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #000;
+}
+.slick-dots{
+    bottom: -30px;
+}
+.slider-area{
+    width: 1370px;
+    height: 300px;
+    margin: 0 auto;
+}
+.slider-area div img{
+    width: 250px;
+    height: 300px;
+}
+
+
+/* Start Section 7 photo-delat */
+
+
+
+
+
+/* Start Section 8 tab-menu */
+.tab-menu{
+    width: 100%;
+    display: flex;
+}
+.tab-menu .imgs{
+    background-image: url(../img/section\ 3.webp);
+    width: 35%;
+    height: 500px;
+}
+::selection{
+    background-color: #ee5253;
+}
+
+.tab-menu .tabbed{
+    width: 65%;
+    margin: 10px auto;
+    padding-left: 50px;
+}
+.tab-menu .tabbed > input{
+    display: none;
+}
+.tab-menu .tabbed > label{
+    display: block;
+    font-family: 'Concert One';
+    text-transform: uppercase;
+    float: left;
+    color: #fac564;
+    border: 1px solid #fac564;
+    padding: 12px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab-menu .tabbed > label:hover,
+.tab-menu .tabbed > input:checked + label{
+    background-color: #fac564;
+    color: black;
+}
+
+.tab-menu .tabbed .tabs{
+    clear: both;
+}
+
+.tab-menu .tabbed .tabs > div {
+    max-width: 1000px;
+    width: 100%;
+    position: absolute;
+    border: 2px solid #fac564;
+    padding: 10px 30px 40px;
+    margin-top: 20px;
+    line-height: 1.4em;
+    opacity: 0;
+    z-index: 0;
+    transform: rotateX(-20deg);
+    transform-origin: top center;
+    transition:  opacity 0.3s, transform 1s;
+}
+
+#tab_one:checked ~ .tabs > div:nth-of-type(1),
+#tab_two:checked ~ .tabs > div:nth-of-type(2),
+#tab_three:checked ~ .tabs > div:nth-of-type(3),
+#tab_four:checked ~ .tabs > div:nth-of-type(4){
+    transform: rotateX(0deg);
+    opacity: 1;
+    z-index: 1;
+}
+
+.tab-menu .tabbed .tabs .items-flex{
+    display: flex;
+    text-align: center;
+        
+}
+.tab-menu .tabbed .tabs .item{
+    max-width: 350px;
+    width: 100%;
+}
+
+.tab-menu .tabbed .tabs .items-flex .img{
+    max-width: 200px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+.tab-menu .tabbed .tabs .items-flex .img img{
+    width: 100%;
+    border-radius: 50%;
+}
+.tab-menu .tabbed .tabs .items-flex .item  h3{
+    font-family: 'Delius Unicase';
+    
+}
+.tab-menu .tabbed .tabs .items-flex .item p{
+    color: grey;
+    font-family: 'Concert One';
+}
+.tab-menu .tabbed .tabs .items-flex .item .price{
+    color: #fac564;
+    font-family: 'Concert One';
+    margin-bottom: 20px;
+}
+.tab-menu .tabbed .tabs .items-flex .item .addToCart {
+    border: 1px solid white;
+    font-family: 'Concert One';
+    color: white;
+    padding: 10px;
+}
+.tab-menu .tabbed .tabs .items-flex .item .addToCart:hover{
+    background: #fac564;
+    color: black;
+    border: 1px solid #fac564;
+}
+/* End Section 8 tab-menu */
+
+
+/* Start Section 9 Recent Blog */
+.recent{
+    margin: 0 auto;
+}
+.recent .text{
+    text-align: center;
+}
+.recent .text h3{
+    font-size: 30px;
+    font-family: 'Concert One';
+    color: white;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.recent .text p{
+    max-width: 635px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Kavoon';
+    color: grey;
+    margin-bottom: 20px;
+}
+.recent .flex{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+.recent .flex .box{
+    max-width: 350px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.recent .flex .box img{
+    width: 100%;
+}
+
+.recent .flex .box .avtor{
+    margin-bottom: 10px;
+    padding-top: 5px;
+    font-family: 'Delius Unicase';
+    
+}
+.recent .flex .box .avtor .data{
+    color: grey;
+    font-size: 15px;
+    text-transform:capitalize;
+    margin-right: 10px;
+    
+}
+.recent .flex .box .avtor .user{
+    color: grey;
+    font-size: 15px;
+    text-transform:capitalize;
+    margin-right: 10px;
+}
+.recent .flex .box .avtor i{
+    font-size: 16px;
+    color: white;
+    margin-right: 5px;
+}
+.recent .flex .box .avtor .data:hover,
+.recent .flex .box .avtor .user:hover{
+    color: white;
+}
+
+.recent .flex .box h3{
+    color: white;
+    font-size: 18px;
+    font-family: 'Orbitron';
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.recent .flex .box p{
+    max-width: 350px;
+    font-family: 'Kavoon';
+    width: 100%;
+    color: grey;
+    line-height: 1.5;
+}
+
+/* End Section 9 Recent Blog */
+
+
+
+/* Start Section 10 Teams */
+
+.teams{
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.tems-class {
+    font-size: 30px;
+    font-family: 'Concert One';
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.teams .box{
+    position: relative;
+    max-width: 250px;
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(0, 0, 0, .5);
+}
+.teams .box .img{
+    position: absolute;
+    top: 50px;
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.teams .box .img img{
+    width: 100%;
+    height: 150px;
+    border-radius: 50%;
+    padding: 10px;
+    border: 2px solid grey;
+}
+.teams .box .img img:hover{
+    border: 2px solid #bf7e06;
+}
+.teams .box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(255, 255, 255, .1);
+    transition: 0.5s;
+    pointer-events: none;
+}
+.box:hover::before{
+    width: 100%;
+}
+.teams .box span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.teams .box span::before{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #0093ff;
+    animation: animation 4s linear infinite;
+}
+
+
+@keyframes animation{
+    0%{
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+    50%{
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+    50.1%{
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+    100%{
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+}
+
+.teams .box .text{
+    position: absolute;
+    top: 220px;
+}
+
+.teams .box .text h3{
+    font-size: 20px;
+    font-family: 'Concert One';
+    margin-bottom: 10px;
+}
+.teams .box .text p{
+    width: 170px;
+    font-size: 16px;
+    font-family: 'Concert One';
+    color: grey;
+    margin-top: 10px;
+}
+/* End Section 10 Teams */
+
+
+/* Start Footer */
+.footer{
+    width: 100%;
+    background: black;
+    padding: 50px;
+    color: white;
+}
+.footer .conteiner{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+/* footer base */
+.footer .conteiner .about h3,
+.footer .conteiner .recent-footer h3,
+.footer .conteiner .services-footer h3,
+.footer .conteiner .contact-footer h3{
+    font-size: 17px;
+    color: white;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Concert One';
+}
+
+/* about */
+.footer .conteiner .about{
+    width: 25%;
+    padding: 10px;
+}
+
+.footer .conteiner .about p{
+    width: 80%;
+    font-size: 14px;
+    font-family: 'Dancing Script';
+    font-weight: 999;
+    color: grey;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+}
+.footer .conteiner .about .soc {
+    display: flex;
+}
+.footer .conteiner .about .soc i{
+    width: 30px;
+    height: 30px;
+    background: grey;
+    color: #fac564;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: 500ms;
+    
+
+}
+.footer .conteiner .about .soc i:hover{
+    background: #fac564;
+    color: black;
+}
+/* recent */
+.footer .conteiner .recent-footer{
+    width: 30%;
+}
+.footer .conteiner .recent-footer .box{
+    width: 100%;
+    display: flex;
+}
+.footer .conteiner .recent-footer .box .img{
+    width: 80px;
+    margin-right: 15px;
+}
+.footer .conteiner .recent-footer .box .img img{
+    width: 100%;
+    height: 80px;
+}
+.footer .conteiner .recent-footer .box .text .head{
+    text-transform: capitalize;
+}
+.footer .conteiner .recent-footer .box .text .head h3:hover{
+    cursor: pointer;
+    color: #fac564;
+}
+.footer .conteiner .recent-footer .box .text .user{
+    display: flex;
+    margin-top: 5px;
+    font-size: 14px;
+    color: grey;
+    font-family: 'Delius Unicase';
+}
+.footer .conteiner .recent-footer .mar{
+    margin-top: 10px;
+}
+.footer .conteiner .recent-footer .box .text .user i{
+    margin-right: 5px;
+}
+
+.footer .conteiner .recent-footer .box .text .user .data,
+.footer .conteiner .recent-footer .box .text .user .us,
+.footer .conteiner .recent-footer .box .text .user .wiev{
+    margin-right: 15px;
+}
+
+.footer .conteiner .recent-footer .box .text .user .data:hover,
+.footer .conteiner .recent-footer .box .text .user .us:hover,
+.footer .conteiner .recent-footer .box .text .user .wiev:hover{
+    color: white;
+    cursor: pointer;
+}
+/* services */
+.footer .conteiner .services-footer{
+    width: 16%;
+}
+.footer .conteiner .services-footer ul li{
+    margin-bottom: 30px;
+}
+.footer .conteiner .services-footer ul li a{
+    color: grey;
+    text-transform: uppercase;
+    font-family: 'Diplomata';
+}
+.footer .conteiner .services-footer ul li a:hover{
+    border-top: 1.5px solid #fac564;
+    border-bottom: 1.5px solid #fac564;
+    color: white;
+}
+
+/* contact */
+.footer .conteiner .contact-footer{
+    width: 20%;
+    font-size: 13px;
+    font-family: 'Delius Unicase';
+}
+.footer .conteiner .contact-footer .location{
+    margin-bottom: 30px;
+}
+.footer .conteiner .contact-footer .location i{
+    margin-right: 10px;
+}
+.footer .conteiner .contact-footer .tel{
+    margin-bottom: 30px;
+}
+.footer .conteiner .contact-footer .tel i{
+    margin-right: 10px;
+}
+.footer .conteiner .contact-footer .mail{
+    margin-bottom: 30px;
+}
+.footer .conteiner .contact-footer .mail i{
+    margin-right: 10px;
+}
+
+/* End Footer */
+
+
