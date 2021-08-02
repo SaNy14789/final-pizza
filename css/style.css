@@ -1,19 +1,17 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
-* Browsers: last 4 version
-*/
-
 /* Base Class */
 body{
     overflow-x: hidden;
+}
+::-moz-selection{
+    background-color: #ee5253;
+}
+::selection{
+    background-color: #ee5253;
 }
 .bg{
     background-image: url(../img/bg\ sec.webp);
     color: white;
 }
-
 /* Start Header */
 .section-1{
     background-image: url(../img/section\ 1.webp);
@@ -24,16 +22,11 @@ body{
     position: relative;
 }
 .wrapper{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     width: 100%;
-}
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}   
 .wrapper .logo{
     width: 150px;
 }
@@ -41,42 +34,28 @@ body{
     width: 100%;
 }
 header{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 30px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    -webkit-transition: 500ms;
-    -o-transition: 500ms;
+    padding: 30px;
     transition: 500ms;
     z-index: 999;
 }
 .nav{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
 }
 .nav a{
-    margin-left: 10px;
     font-size: 15px;
     font-weight: 800;
-    text-decoration: none;
     font-family: 'Concert One';
-    text-transform: capitalize;
+    text-decoration: none;
     color: #eee;
     text-transform: uppercase;
-    border-bottom: 3px solid transparent;
     padding: 10px 1px;
-    -webkit-transition: 500ms;
-    -o-transition: 500ms;
+    margin-left: 10px;
+    border-bottom: 3px solid transparent;
     transition: 500ms;
-    
 }
 a.active{
     color: #fac564;
@@ -89,12 +68,10 @@ nav a:hover{
     background: black;
     padding: 10px;
 }
-
 .bgc .logo{
     font-size: 30px;
     color: #000;
 }
-
 .bgc nav a{
     width: 50px;
     color: white;
@@ -106,13 +83,10 @@ nav a:hover{
 .burger-icon {
     display: none;
 }
-
 .login{
     background: red;
     font-family: 'Concert One';
     padding: 10px;
-    -webkit-transition: 500ms;
-    -o-transition: 500ms;
     transition: 500ms;
 }
 .login i{
@@ -129,33 +103,20 @@ nav a:hover{
     background: grey;
 }
 /* End Header */
-
-
 /* Start Section Welcome*/
 #Welcome{
     position: absolute;
     top: 230px;
     left:30%;
 }
-
 .welcome{
-    padding: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
     color: white;
 }
-
 .welcome h3{
     font-size: 50px;
     font-family: 'Dancing Script';
@@ -179,22 +140,20 @@ nav a:hover{
 .welcome p{
     max-width: 500px;
     width: 100%;
-    font-family: 'Concert One';
     font-size: 18px;
+    font-family: 'Concert One';
     line-height: 1.3;
     font-weight: 300;
     text-align: center;
     margin-bottom: 50px;
 }
 .welcome .but .order{
-    padding: 15px;
     background-color: #fac564;
-    border:  1px solid #fac564;
-    font-family: 'Concert One';
     color: black;
+    font-family: 'Concert One';
+    padding: 15px;
     margin-right: 10px;
-    -webkit-transition: all 0.5s linear 0.4s;
-    -o-transition: all 0.5s linear 0.4s;
+    border:  1px solid #fac564;
     transition: all 0.5s linear 0.4s;
 }
 .welcome .but .view{
@@ -203,8 +162,6 @@ nav a:hover{
     font-family: 'Concert One';
     color: white;
     margin-right: 10px;
-    -webkit-transition: all 0.5s linear 0.4s;
-    -o-transition: all 0.5s linear 0.4s;
     transition: all 0.5s linear 0.4s;
 }
 .welcome .but .order:hover{
@@ -218,50 +175,28 @@ nav a:hover{
     color: black;
     border: 1px solid #fac564;
 }
-
 /* End Section Welcome*/
-
-
-
-
 /* Start Section 2 Info */
 .info{
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
 }
-
 .info .left{
     width: 65%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-around;
     background: black;
     color: white;
     padding: 20px 10px 10px 50px ;
 }
 .info .left .tel{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
 }
-
-
 .info .left .tel .text{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
 }
-
 .info .left .tel i{
     color: #fac564;
     margin-right: 20px;
@@ -273,7 +208,6 @@ nav a:hover{
     line-height: 1.4;
     margin-bottom: 18px;
 }
-
 .info .left .tel .text h3{
     font-size: 16px;
     font-family: 'Delius Unicase';
@@ -281,7 +215,6 @@ nav a:hover{
     margin-bottom: 20px;
     color: grey;
 }
-
 .info .right{
     width: 35%;
     background: #fac564;
@@ -289,24 +222,16 @@ nav a:hover{
     color: white;
     font-size: 25px;
 }
-
 .info .right i{
     margin-left: 30px;
 }
-
 .info .right i:hover{
     color: black;
     cursor: pointer;
 }
 /* End Section 2 Info */
-
-
-
 /* Start Section 3 Restorant Info */
-
 .rest-info{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
 }
 .rest-info .bg{
@@ -318,10 +243,9 @@ nav a:hover{
 .rest-info .text {
     width: 50%;
     height: 400px;
-    padding: 100px;
     font-family: 'Delius Unicase';
+    padding: 100px;
 }
-
 .rest-info .text span{
     font-size: 30px;
     font-weight: 400;
@@ -347,30 +271,18 @@ nav a:hover{
     max-width: 565px;
     width: 100%;
     font-size: 15px;
+    font-family: 'Concert One';
     line-height: 1.8;
     color: grey;
-    font-family: 'Concert One';
 }
 /* End Section 3 Restorant Info */
-
-
-
 /* Start Section 4 Services */
 .services{
     background-image: url(../img/section\ 4.webp);
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .services h2{
     font-size: 30px;
@@ -390,49 +302,27 @@ nav a:hover{
     margin-bottom: 50px;
     line-height: 1.8;
 }
-
 .services .flex{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
 }
-
 .services .flex .box{
     max-width: 350px;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
 .services .flex .box .icon{
     width: 100px;
     height: 100px;
     border: 1px solid #bf7e06;
     font-size: 60px;
     color: #5c3d03;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 20px;
-    -webkit-transition: all 0.3s linear 0.4s;
-    -o-transition: all 0.3s linear 0.4s;
     transition: all 0.3s linear 0.4s;
 }
 .services .flex .box .icon:hover{
@@ -453,11 +343,7 @@ nav a:hover{
     color: #5c3d03;
 }
 /* End Section 4 Services */
-
-
-
 /* Start Section 5 Meals */
-
 .meals{
     width: 100%;
     color: white;
@@ -471,25 +357,15 @@ nav a:hover{
     padding-top: 50px;
     padding-bottom: 30px;
 }
-
 .meals .conteiner{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 .meals .conteiner .item{
     width: 33.3%;
-    
-    display: -webkit-box;
-    
-    display: -ms-flexbox;
-    
     display: flex;
     background-color: rgba(0, 0, 0, 0.2);
 }
-
 .meals .conteiner .item .img{
     width: 50%;
 }
@@ -497,8 +373,6 @@ nav a:hover{
     width: 100%;
     height: 240px;
 }
-
-
 .meals .conteiner .item .delat{
     width: 50%;
     padding: 30px;
@@ -518,7 +392,6 @@ nav a:hover{
 .meals .conteiner .item .delat .price{
     margin-top: 20px;
 }
-
 .meals .conteiner .item .delat .price span{
     color: #bf7e06;
     font-family: 'Concert One';
@@ -526,14 +399,12 @@ nav a:hover{
     cursor: pointer;
     margin-right: 10px;
 }
-
 .meals .conteiner .item .delat .price a{
     color: rgba(255,255,255,.8);
     border: 1px solid white;
     font-family: 'Concert One';
     padding: 10px;
     text-transform: uppercase;
-
 }
 .meals .conteiner .item .delat .price a:hover{
     background: #fac564;
@@ -541,11 +412,7 @@ nav a:hover{
     border: 1px solid #bf7e06;
 }
 /* End Section 5 Meals */
-
-
-
 /* Start Section 6 menu pricing */
-
 .menu-pricing{
     max-width: 1140px;
     width: 100%;
@@ -556,7 +423,6 @@ nav a:hover{
 .menu-pricing  .texts{
     margin-bottom: 50px;
     text-align: center;
-
 }
 .menu-pricing .texts h3{
     font-size: 30px;
@@ -565,32 +431,24 @@ nav a:hover{
     text-transform: uppercase;
     margin-bottom: 20px;
 }
-
 .menu-pricing .texts p{
     max-width: 635px;
     width: 100%;
-    margin: 0 auto;
-    text-align: center;
     font-size: 14px;
     font-family: 'Delius Unicase';
     color: grey;
+    margin: 0 auto;
+    text-align: center;
     line-height: 1.5;
 }
-
 .menu-pricing  .texts .box-box {
     max-width: 635px;
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 20px;
 }
 .menu-pricing  .texts .box-box .b1{
@@ -598,30 +456,21 @@ nav a:hover{
     height: 6px;
     background: #fac564;
     margin-right: 10px;
-    -webkit-transform: rotate(140deg);
-        -ms-transform: rotate(140deg);
-            transform: rotate(140deg);
-
+    transform: rotate(140deg);
 }
 .menu-pricing  .texts .box-box .b2{
     width: 10px;
     height: 10px;
     background: #fac564;
     margin-right: 10px;
-    -webkit-transform: rotate(140deg);
-        -ms-transform: rotate(140deg);
-            transform: rotate(140deg);
+    transform: rotate(140deg);
 }
-
 .menu-pricing  .texts .box-box .b3{
     width: 6px;
     height: 6px;
     background: #fac564;
-    -webkit-transform: rotate(140deg);
-        -ms-transform: rotate(140deg);
-            transform: rotate(140deg);
+    transform: rotate(140deg);
 }
-
 .menu-pricing  .texts .box-box::before{
     content: '';
     width: 40px;
@@ -636,57 +485,36 @@ nav a:hover{
     background: #fac564;
     margin-left: 10px;
 }
-
-
 .menu-pricing .flex{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
-
 .menu-pricing .flex .box{
     max-width: 570px;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-top: 30px;
 }
-
 .menu-pricing .flex .box .img{
     width: 60px;
     height: 60px;
     margin-right: 20px;
 }
 .menu-pricing .flex{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
-
-
 .menu-pricing .flex .box .img{
     width: 60px;
     height: 60px;
 }
-
-
 .menu-pricing .flex .box .img img{
     width: 100%;
     border-radius: 50%;
 }
-
 .menu-pricing .flex .box .text .tit-price{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
 }
 .menu-pricing .flex .box .text h2{
     color: #bfbfbf;
@@ -697,7 +525,6 @@ nav a:hover{
     color: #fac564;
     font-family: 'Concert One';
 }
-
 .menu-pricing .flex .box .text p{
     font-size: 15px;
     font-family: 'Concert One';
@@ -705,34 +532,23 @@ nav a:hover{
     margin-top: 20px;
 }
 /* End Section 6 menu pricing */
-
-
 /* Start Section 7 photo-delat */
-
-
 .container {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding: 0 20px;
 }
-
 .slide {
     height: 400px;
     border-radius: 10px;
     margin: 10px;
     cursor: pointer;
     color: #fff;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    flex: 1;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    -webkit-transition: all 500ms ease-in-out;
-    -o-transition: all 500ms ease-in-out;
     transition: all 500ms ease-in-out;
 }
 .slide h3 {
@@ -744,77 +560,44 @@ nav a:hover{
     opacity: 0;
 }
 .slide.active {
-    -webkit-box-flex: 10;
-        -ms-flex: 10;
-            flex: 10;
+    flex: 10;
 }
-
 .slide.active h3 {
     opacity: 1;
-    -webkit-transition: opacity 0.3s ease-in 0.4s;
-    -o-transition: opacity 0.3s ease-in 0.4s;
     transition: opacity 0.3s ease-in 0.4s;
 }
 .photo .flex{
     background-image: url(../img/section\ 7.webp);
     width: 100%;
-    
     min-height: 400px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
-
 .photo .flex .box{
     max-width: 240px;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
 .photo .flex .box .icon{
     width: 100px;
     height: 100px;
     color: #fac564;
     border: 1px solid #fac564;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     font-size: 40px;
     margin-bottom: 20px;
-    -webkit-transition: all 0.3s linear 0.4s;
-    -o-transition: all 0.3s linear 0.4s;
     transition: all 0.3s linear 0.4s;
 }
 .photo .flex .box .icon:hover{
@@ -822,24 +605,13 @@ nav a:hover{
     color: white;
     border: 1px solid #bf7e06;
 }
-
 .photo .flex .box .title{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .photo .flex .box h3{
-    
     font-size: 30px;
     font-family: 'Kavoon';
     font-weight: 400;
@@ -847,13 +619,11 @@ nav a:hover{
     margin-bottom: 20px;
 }
 .photo .flex .box span{
-    
     font-size: 14px;
     font-weight: 900;
     color: #bfbfbf;
     margin-bottom: 50px;
 }
-
 /* stiki */
 .slider {
     width: 50%;
@@ -870,8 +640,6 @@ nav a:hover{
     color: black;
 }
 .slick-slide {
-    -webkit-transition: all ease-in-out .3s;
-    -o-transition: all ease-in-out .3s;
     transition: all ease-in-out .3s;
     opacity: .2;
 }
@@ -899,19 +667,10 @@ nav a:hover{
     width: 250px;
     height: 300px;
 }
-
-
 /* Start Section 7 photo-delat */
-
-
-
-
-
 /* Start Section 8 tab-menu */
 .tab-menu{
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
 }
 .tab-menu .imgs{
@@ -919,13 +678,6 @@ nav a:hover{
     width: 35%;
     height: 500px;
 }
-::-moz-selection{
-    background-color: #ee5253;
-}
-::selection{
-    background-color: #ee5253;
-}
-
 .tab-menu .tabbed{
     width: 65%;
     margin: 10px auto;
@@ -944,8 +696,6 @@ nav a:hover{
     padding: 12px 20px;
     margin-right: 5px;
     cursor: pointer;
-    -webkit-transition: background-color 0.3s;
-    -o-transition: background-color 0.3s;
     transition: background-color 0.3s;
 }
 
@@ -954,11 +704,9 @@ nav a:hover{
     background-color: #fac564;
     color: black;
 }
-
 .tab-menu .tabbed .tabs{
     clear: both;
 }
-
 .tab-menu .tabbed .tabs > div {
     max-width: 1000px;
     width: 100%;
@@ -969,45 +717,30 @@ nav a:hover{
     line-height: 1.4em;
     opacity: 0;
     z-index: 0;
-    -webkit-transform: rotateX(-20deg);
-            transform: rotateX(-20deg);
-    -webkit-transform-origin: top center;
-        -ms-transform-origin: top center;
-            transform-origin: top center;
-    -webkit-transition:  opacity 0.3s, -webkit-transform 1s;
-    transition:  opacity 0.3s, -webkit-transform 1s;
-    -o-transition:  opacity 0.3s, transform 1s;
+    transform: rotateX(-20deg);
+    transform-origin: top center;
     transition:  opacity 0.3s, transform 1s;
-    transition:  opacity 0.3s, transform 1s, -webkit-transform 1s;
 }
-
 #tab_one:checked ~ .tabs > div:nth-of-type(1),
 #tab_two:checked ~ .tabs > div:nth-of-type(2),
 #tab_three:checked ~ .tabs > div:nth-of-type(3),
 #tab_four:checked ~ .tabs > div:nth-of-type(4){
-    -webkit-transform: rotateX(0deg);
-            transform: rotateX(0deg);
+    transform: rotateX(0deg);
     opacity: 1;
     z-index: 1;
 }
-
 .tab-menu .tabbed .tabs .items-flex{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     text-align: center;
-        
 }
 .tab-menu .tabbed .tabs .item{
     max-width: 350px;
     width: 100%;
 }
-
 .tab-menu .tabbed .tabs .items-flex .img{
     max-width: 200px;
     width: 100%;
     margin: 0 auto;
-
 }
 .tab-menu .tabbed .tabs .items-flex .img img{
     width: 100%;
@@ -1015,7 +748,6 @@ nav a:hover{
 }
 .tab-menu .tabbed .tabs .items-flex .item  h3{
     font-family: 'Delius Unicase';
-    
 }
 .tab-menu .tabbed .tabs .items-flex .item p{
     color: grey;
@@ -1038,8 +770,6 @@ nav a:hover{
     border: 1px solid #fac564;
 }
 /* End Section 8 tab-menu */
-
-
 /* Start Section 9 Recent Blog */
 .recent{
     margin: 0 auto;
@@ -1055,7 +785,6 @@ nav a:hover{
     margin-bottom: 20px;
     text-transform: uppercase;
 }
-
 .recent .text p{
     max-width: 635px;
     width: 100%;
@@ -1070,11 +799,8 @@ nav a:hover{
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     padding-bottom: 50px;
 }
 .recent .flex .box{
@@ -1082,23 +808,19 @@ nav a:hover{
     width: 100%;
     margin-top: 50px;
 }
-
 .recent .flex .box img{
     width: 100%;
 }
-
 .recent .flex .box .avtor{
     margin-bottom: 10px;
     padding-top: 5px;
     font-family: 'Delius Unicase';
-    
 }
 .recent .flex .box .avtor .data{
     color: grey;
     font-size: 15px;
     text-transform:capitalize;
     margin-right: 10px;
-    
 }
 .recent .flex .box .avtor .user{
     color: grey;
@@ -1115,7 +837,6 @@ nav a:hover{
 .recent .flex .box .avtor .user:hover{
     color: white;
 }
-
 .recent .flex .box h3{
     color: white;
     font-size: 18px;
@@ -1124,7 +845,6 @@ nav a:hover{
     margin-bottom: 20px;
     text-transform: capitalize;
 }
-
 .recent .flex .box p{
     max-width: 350px;
     font-family: 'Kavoon';
@@ -1132,28 +852,17 @@ nav a:hover{
     color: grey;
     line-height: 1.5;
 }
-
 /* End Section 9 Recent Blog */
-
-
-
 /* Start Section 10 Teams */
-
 .teams{
     max-width: 1240px;
     width: 100%;
     margin: 0 auto;
     padding: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     text-align: center;
 }
 .tems-class {
@@ -1167,26 +876,16 @@ nav a:hover{
     margin-bottom: 20px;
     text-transform: uppercase;
 }
-
 .teams .box{
     position: relative;
     max-width: 250px;
     width: 100%;
     height: 400px;
     padding: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 2px solid rgba(0, 0, 0, .5);
 }
 .teams .box .img{
@@ -1196,7 +895,6 @@ nav a:hover{
     margin-bottom: 10px;
     border-radius: 50%;
 }
-
 .teams .box .img img{
     width: 100%;
     height: 150px;
@@ -1215,8 +913,6 @@ nav a:hover{
     width: 0;
     height: 100%;
     background: rgba(255, 255, 255, .1);
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
     transition: 0.5s;
     pointer-events: none;
 }
@@ -1238,71 +934,48 @@ nav a:hover{
     width: 100%;
     height: 2px;
     background: #0093ff;
-    -webkit-animation: animation 4s linear infinite;
-            animation: animation 4s linear infinite;
+    animation: animation 4s linear infinite;
 }
-
-
 @-webkit-keyframes animation{
     0%{
-        -webkit-transform: scaleX(0);
-                transform: scaleX(0);
-        -webkit-transform-origin: left;
-                transform-origin: left;
+        transform: scaleX(0);
+        transform-origin: left;
     }
     50%{
-        -webkit-transform: scaleX(1);
-                transform: scaleX(1);
-        -webkit-transform-origin: left;
-                transform-origin: left;
+        transform: scaleX(1);
+        transform-origin: left;
     }
     50.1%{
-        -webkit-transform: scaleX(1);
-                transform: scaleX(1);
-        -webkit-transform-origin: right;
-                transform-origin: right;
+        transform: scaleX(1);
+        transform-origin: right;
     }
     100%{
-        -webkit-transform: scaleX(0);
-                transform: scaleX(0);
-        -webkit-transform-origin: right;
-                transform-origin: right;
+        transform: scaleX(0);
+        transform-origin: right;
     }
 }
-
-
 @keyframes animation{
     0%{
-        -webkit-transform: scaleX(0);
-                transform: scaleX(0);
-        -webkit-transform-origin: left;
-                transform-origin: left;
+        transform: scaleX(0);
+        transform-origin: left;
     }
     50%{
-        -webkit-transform: scaleX(1);
-                transform: scaleX(1);
-        -webkit-transform-origin: left;
-                transform-origin: left;
+        transform: scaleX(1);
+        transform-origin: left;
     }
     50.1%{
-        -webkit-transform: scaleX(1);
-                transform: scaleX(1);
-        -webkit-transform-origin: right;
-                transform-origin: right;
+        transform: scaleX(1);
+        transform-origin: right;
     }
     100%{
-        -webkit-transform: scaleX(0);
-                transform: scaleX(0);
-        -webkit-transform-origin: right;
-                transform-origin: right;
+        transform: scaleX(0);
+        transform-origin: right;
     }
 }
-
 .teams .box .text{
     position: absolute;
     top: 220px;
 }
-
 .teams .box .text h3{
     font-size: 20px;
     font-family: 'Concert One';
@@ -1316,8 +989,6 @@ nav a:hover{
     margin-top: 10px;
 }
 /* End Section 10 Teams */
-
-
 /* Start Footer */
 .footer{
     width: 100%;
@@ -1329,13 +1000,9 @@ nav a:hover{
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-around;
     padding: 10px;
 }
 /* footer base */
@@ -1349,13 +1016,11 @@ nav a:hover{
     text-transform: uppercase;
     font-family: 'Concert One';
 }
-
 /* about */
 .footer .conteiner .about{
     width: 25%;
     padding: 10px;
 }
-
 .footer .conteiner .about p{
     width: 80%;
     font-size: 14px;
@@ -1376,22 +1041,12 @@ nav a:hover{
     height: 30px;
     background: grey;
     color: #fac564;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     margin-right: 15px;
     cursor: pointer;
-    -webkit-transition: 500ms;
-    -o-transition: 500ms;
     transition: 500ms;
-    
-
 }
 .footer .conteiner .about .soc i:hover{
     background: #fac564;
@@ -1423,8 +1078,6 @@ nav a:hover{
     color: #fac564;
 }
 .footer .conteiner .recent-footer .box .text .user{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-top: 5px;
     font-size: 14px;
@@ -1437,13 +1090,11 @@ nav a:hover{
 .footer .conteiner .recent-footer .box .text .user i{
     margin-right: 5px;
 }
-
 .footer .conteiner .recent-footer .box .text .user .data,
 .footer .conteiner .recent-footer .box .text .user .us,
 .footer .conteiner .recent-footer .box .text .user .wiev{
     margin-right: 15px;
 }
-
 .footer .conteiner .recent-footer .box .text .user .data:hover,
 .footer .conteiner .recent-footer .box .text .user .us:hover,
 .footer .conteiner .recent-footer .box .text .user .wiev:hover{
@@ -1467,7 +1118,6 @@ nav a:hover{
     border-bottom: 1.5px solid #fac564;
     color: white;
 }
-
 /* contact */
 .footer .conteiner .contact-footer{
     width: 20%;
@@ -1492,6 +1142,4 @@ nav a:hover{
 .footer .conteiner .contact-footer .mail i{
     margin-right: 10px;
 }
-
 /* End Footer */
-

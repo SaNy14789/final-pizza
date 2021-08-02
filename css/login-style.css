@@ -1,7 +1,4 @@
 /* rain */
-
-
-
 body {
     background-image: linear-gradient(to bottom, #030420, #000000 70%);
     width: 100vw;
@@ -9,7 +6,6 @@ body {
     overflow: hidden;
     position: relative;
 }
-  
 hr.thunder {
     border: unset;
     position: absolute;
@@ -19,7 +15,6 @@ hr.thunder {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
-  
 hr:not(.thunder) {
     width: 50px;
     border-color: transparent;
@@ -33,7 +28,6 @@ hr:not(.thunder) {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
-  
 @keyframes rain {
     from {
       transform: rotate(105deg) translateX(0);
@@ -42,7 +36,6 @@ hr:not(.thunder) {
       transform: rotate(105deg) translateX(calc(100vh + 20px));
     }
 }
-  
 @keyframes thunder {
     0% {
       background-color: transparent;
@@ -57,7 +50,6 @@ hr:not(.thunder) {
       background-color: transparent;
     }
 }
-
 .wrapper{
     position: absolute;
     top: 50%;
@@ -83,14 +75,11 @@ hr:not(.thunder) {
     width: 60%;
     clip-path: polygon(0 0, 0% 100%, 100% 0);
     background: #44c7f5;
-
 }
-
 .login .col-right{
     width: 50%;
     margin-left: -10%;
 }
-
 @media (max-width:575px){
     .login .conteiner{
         flex-direction: column;
@@ -106,12 +95,10 @@ hr:not(.thunder) {
         padding: 30px;
     }
 }
-
 .login .conteiner .col-left{
     display: flex;
     flex-direction: column;
 }
-
 .login .conteiner .col-left h2{
     font-size: 30px;
     color: black;
@@ -130,7 +117,6 @@ hr:not(.thunder) {
     height: 40px;
     border-radius: 50%;
     border: 1px solid grey;
-    
 }
 .login .conteiner .col-left .back i{
     position: absolute;
@@ -143,7 +129,6 @@ hr:not(.thunder) {
 .login .conteiner .col-left .back:hover{
     background-color: black;
 }
-
 .login .conteiner .col-right .login-form h2{
     font-size: 20px;
     font-weight: 888;
@@ -152,7 +137,6 @@ hr:not(.thunder) {
 .login .conteiner .col-right .login-form form .username{
     margin-bottom: 10px;
 }
-
 .input-wrapper{
     max-width: 200px;
     width: 100%;
