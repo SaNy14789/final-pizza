@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /* header */
 /* burger */
 @media (max-width: 768px){
@@ -35,7 +42,10 @@
         display: block;
     } 
     .wrapper{
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       padding: 20px;
     }
     nav{
@@ -72,16 +82,25 @@
 /*  Section 2 info */
 @media (max-width:1596px) {
     .info .left {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .info .right{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 }
 @media (max-width:630px) {
-    .info {flex-direction: column;}
+    .info {-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;}
     .info  .left{width: 100%;}
     .info  .right{width: 100%;}
 }
@@ -96,10 +115,19 @@
     .rest-info .text{
         width: 100%;
         height: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 }
 @media (max-width:660px){
@@ -112,7 +140,7 @@
 }
 /* Section 4 Services */
 @media (max-width:1050px){
-    .services .flex{flex-direction: column;}
+    .services .flex{-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;}
 }
 @media (max-width:650px){
     .services p{padding: 15px;}
@@ -132,8 +160,13 @@
 }
 @media (max-width:420px){
     .meals .conteiner .item .delat .price{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .meals .conteiner .item .delat .price a{
         width: 80px;
@@ -190,7 +223,8 @@
         margin-top: 100px;
     }
     .tab-menu .tabbed .tabs  div{
-        perspective: 1800px;
+        -webkit-perspective: 1800px;
+                perspective: 1800px;
     }
 }
 @media (max-width:1080px){
@@ -224,8 +258,13 @@
         margin-bottom: 20px;
     }
     .tab-menu .tabbed .tabs .items-flex{
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .tab-menu .tabbed{
         height: 1050px;
@@ -245,8 +284,13 @@
 /* Section Recent Blog */
 @media (max-width:1120px){
     .recent .flex{
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 }
 @media (max-width:387px){
@@ -293,7 +337,10 @@
 }
 @media (max-width:500px){
     .footer .conteiner .recent-footer .box{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .footer .conteiner .recent-footer .box .img{
         width: 200px;

@@ -1,5 +1,14 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /* rain */
 body {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#030420), color-stop(70%, #000000));
+    background-image: -o-linear-gradient(top, #030420, #000000 70%);
     background-image: linear-gradient(to bottom, #030420, #000000 70%);
     width: 100vw;
     height: 100vh;
@@ -11,9 +20,12 @@ hr.thunder {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    animation-name: thunder;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: thunder;
+            animation-name: thunder;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
 }
 hr:not(.thunder) {
     width: 50px;
@@ -22,58 +34,70 @@ hr:not(.thunder) {
     border-right-width: 50px;
     position: absolute;
     bottom: 100%;
-    transform-origin: 100% 50%;
-    animation-name: rain;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    -webkit-transform-origin: 100% 50%;
+        -ms-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+    -webkit-animation-name: rain;
+            animation-name: rain;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+@-webkit-keyframes rain {
+    from { -webkit-transform: rotate(105deg) translateX(0); transform: rotate(105deg) translateX(0);}
+    to { -webkit-transform: rotate(105deg) translateX(calc(100vh + 20px)); transform: rotate(105deg) translateX(calc(100vh + 20px));}
 }
 @keyframes rain {
-    from {
-      transform: rotate(105deg) translateX(0);
-    }
-    to {
-      transform: rotate(105deg) translateX(calc(100vh + 20px));
-    }
+    from { -webkit-transform: rotate(105deg) translateX(0); transform: rotate(105deg) translateX(0);}
+    to { -webkit-transform: rotate(105deg) translateX(calc(100vh + 20px)); transform: rotate(105deg) translateX(calc(100vh + 20px));}
+}
+@-webkit-keyframes thunder {
+    0% {background-color: transparent;}
+    1% {background-color: white;}
+    2% {background-color: rgba(255, 255, 255, 0.8);}
+    8% {background-color: transparent;}
 }
 @keyframes thunder {
-    0% {
-      background-color: transparent;
-    }
-    1% {
-      background-color: white;
-    }
-    2% {
-      background-color: rgba(255, 255, 255, 0.8);
-    }
-    8% {
-      background-color: transparent;
-    }
+    0% {background-color: transparent;}
+    1% {background-color: white;}
+    2% {background-color: rgba(255, 255, 255, 0.8);}
+    8% {background-color: transparent;}
 }
 .wrapper{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
     z-index: 988;
 }
 .conteiner{
     width: 100%;
     max-width: 600px;
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background: #ffffff;
-    box-shadow: 0 0 5px #999999;
+    -webkit-box-shadow: 0 0 5px #999999;
+            box-shadow: 0 0 5px #999999;
     z-index: 999;
 }
 .login .col-left,
 .login .col-right{
     padding: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .login .col-left{
     width: 60%;
-    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+            clip-path: polygon(0 0, 0% 100%, 100% 0);
     background: #44c7f5;
 }
 .login .col-right{
@@ -82,22 +106,32 @@ hr:not(.thunder) {
 }
 @media (max-width:575px){
     .login .conteiner{
-        flex-direction: column;
-        box-shadow: none;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-shadow: none;
+                box-shadow: none;
     }
     .login .col-left,
     .login .col-right{
         width: 100%;
         margin: 0;
-        clip-path: none;
+        -webkit-clip-path: none;
+                clip-path: none;
     }
     .login .col-right{
         padding: 30px;
     }
 }
 .login .conteiner .col-left{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .login .conteiner .col-left h2{
     font-size: 30px;
@@ -122,7 +156,9 @@ hr:not(.thunder) {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
     color: white;
     font-size: 23px;
 }
@@ -150,6 +186,8 @@ hr:not(.thunder) {
 }
 .input-wrapper:focus{
     border-bottom: 3px solid #00afaf;
+    -webkit-transition: 500ms;
+    -o-transition: 500ms;
     transition: 500ms;
 }
 .submit input{
@@ -157,6 +195,8 @@ hr:not(.thunder) {
     padding: 10px;
     color: black;
     font-family: 899;
+    -webkit-transition: 200ms;
+    -o-transition: 200ms;
     transition: 200ms;
 }
 .submit input:hover{
