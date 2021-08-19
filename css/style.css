@@ -453,6 +453,7 @@ nav a:hover{
 .meals .conteiner .item .img img{
     width: 100%;
     height: 240px;
+    object-fit: cover;
 }
 .meals .conteiner .item .delat{
     width: 50%;
@@ -1083,6 +1084,7 @@ nav a:hover{
     border-radius: 50%;
     padding: 10px;
     border: 2px solid grey;
+    object-fit: cover;
 }
 .teams .box .img img:hover{
     border: 2px solid #bf7e06;
@@ -1282,6 +1284,7 @@ nav a:hover{
 .footer .conteiner .recent-footer .box .img img{
     width: 100%;
     height: 80px;
+    object-fit: cover;
 }
 .footer .conteiner .recent-footer .box .text .head{
     text-transform: capitalize;
